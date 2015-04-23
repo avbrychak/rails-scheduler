@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}/
+    %title Scheduler test task
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application'
+  %body
+    = yield
+    = javascript_include_tag 'application'
+    = yield :footer
